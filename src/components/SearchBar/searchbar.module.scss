@@ -1,0 +1,27 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  margin-block: 0 15px;
+
+  .form {
+    width: 40%;
+    margin: 0;
+    color: variables.$details-color;
+
+    .searchBarInput {
+      border-radius: 10px;
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #fff;
+      box-shadow: 0 0 3px variables.$details-color;
+      cursor: pointer;
+      font-size: 10px;
+
+      &:hover {
+        box-shadow: 0 0 3px #0000ff;
+      }
+    }
+  }
+}

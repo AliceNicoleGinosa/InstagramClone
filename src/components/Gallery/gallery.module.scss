@@ -1,0 +1,50 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+.galleryContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  background-color: variables.$basic-background-color;
+  overflow-y: auto;
+  align-items: center;
+  cursor: pointer;
+
+  .sectionIconBackGallery {
+    background-color: rgba(255, 255, 255, 0.69);
+    box-shadow: 0 0 2px 0 rgb(122, 122, 122);
+    width: 100%;
+    margin-bottom: 80px;
+    position: fixed;
+
+    @include mixins.desktop() {
+      height: 45px;
+      width: 50%;
+    }
+
+    .IconBackGallery {
+      font-size: 40px;
+      color: rgb(2, 2, 47);
+      text-shadow: 0 0 10px black;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  .photogalleryContainer {
+    margin-top: 40px;
+
+    @include mixins.desktop() {
+      margin-top: 45px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+    }
+  }
+}

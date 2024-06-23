@@ -1,0 +1,82 @@
+@use "../../assets/mixins";
+.ContainerUserProfile {
+  padding: 8px;
+
+  @include mixins.desktop() {
+    padding: 10px;
+  }
+
+  .userDetails {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 12px;
+
+    @include mixins.desktop() {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .imageContainer {
+      margin-bottom: 8px;
+      margin-right: 22px;
+
+      @include mixins.desktop() {
+        margin-right: 20px;
+      }
+
+      .imageProfile {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 30px;
+    height: fit-content;
+    padding-top: 15px;
+
+    .spanstyle {
+      font-weight: bold;
+    }
+
+    .digits {
+      font-weight: lighter;
+    }
+  }
+  .userInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .profileInfos {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 100%;
+
+      @include mixins.desktop() {
+        width: 100%;
+
+        justify-content: center;
+      }
+
+      .spanstyle {
+        font-weight: bold;
+        font-size: 12px;
+      }
+
+      .digits {
+        font-weight: lighter;
+        max-width: 75%;
+        font-size: 13px;
+      }
+    }
+  }
+}

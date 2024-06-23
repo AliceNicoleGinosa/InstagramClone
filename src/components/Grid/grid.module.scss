@@ -1,0 +1,27 @@
+@use "../../assets/mixins";
+
+.titleNoMatch {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-top: 20px;
+  line-height: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.gridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 9;
+  max-height: 65dvh;
+  overflow-y: auto;
+  line-height: 0%;
+  cursor: pointer;
+  overflow-x: hidden;
+
+  @include mixins.desktop() {
+    display: flex;
+    justify-content: center;
+    max-height: 65dvh;
+  }
+}

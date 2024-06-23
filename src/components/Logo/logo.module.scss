@@ -1,0 +1,7 @@
+@use "../../assets/variables";
+.logo {
+  margin-top: 8px;
+  text-shadow: 0 0 5px variables.$details-color;
+  display: block;
+  width: 100%;
+}

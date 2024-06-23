@@ -1,0 +1,29 @@
+@use "../../assets/variables";
+@use "../../assets/mixins";
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+  background-color: #fff;
+  height: 6dvh;
+
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  @include mixins.desktop() {
+    height: 8dvh;
+    padding-top: 8px;
+  }
+  .footerIcon {
+    font-size: 25px;
+    cursor: pointer;
+    & :hover {
+      color: variables.$details-color;
+    }
+    @include mixins.desktop() {
+      font-size: 30px;
+    }
+  }
+}
