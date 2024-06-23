@@ -2,7 +2,7 @@ import styles from "./userprofile.module.scss";
 
 const Userprofile = ({
   username = "Alice Nicole Ginosa",
-  img = "./src/assets/images/Alice.png",
+  img = "public/images/Alice.png",
   bio = "Writer, reader, walking disaster and photo chaser!",
   posts = "30",
   followers = "150",
